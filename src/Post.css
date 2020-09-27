@@ -1,0 +1,27 @@
+.post{
+  background-color: #fafafa;
+  max-width: 400px;
+  border: 1px solid grey;
+  margin-bottom: 40px;
+  align-self: center;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.post__image{
+  width: 100%;
+  object-fit: contain;
+}
+.post__header{
+  display: flex;
+  align-items: center;
+  padding: 20px 10px;
+}
+.post__headerAvatar{
+  margin-right: 10px;
+}
+.post__footer{
+  padding: 20px 10px;
+}
+.post__commentbox{
+  padding: 20px 10px;
+}
