@@ -39,8 +39,14 @@ function ImageUpload({username, userAvatar}) {
             imageURL: url,
             username: username,
             userAvatar: userAvatar,
-            comments: []
+            comments: [],
+            likes: []
+          }).then((postinfo) => {
+
+            console.log(postinfo.id);
+
           })
+
           alert("Posted...")
           setProgress(0)
           setCaption("")

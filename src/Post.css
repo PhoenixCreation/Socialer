@@ -25,3 +25,7 @@
 .post__commentbox{
   padding: 20px 10px;
 }
+.post__likesection{
+  display: flex;
+  align-items: center;
+}
