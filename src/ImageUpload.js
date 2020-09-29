@@ -42,9 +42,15 @@ function ImageUpload({username, userAvatar}) {
             comments: [],
             likes: []
           }).then((postinfo) => {
-
             console.log(postinfo.id);
+            db.collection('userinfo').where("username","==",username).get().then((snapshot) => {
+              snapshot.forEach(orderitem => {
+                db.collection('userinfo').doc(orderitem.id).update({
+                  posts: firebase.firestore.FieldValue.arrayUnion(postinfo.id)
+                })
+              });
 
+            })
           })
 
           alert("Posted...")

@@ -45,6 +45,7 @@ function App() {
   const [userImage,setUserImage] = useState(null)
   const [user,setUser] = useState(null)
   const [avatarURL,setAvatarURL] = useState(null)
+  const [userinfoID,setUserinfoID] = useState(null)
 
   const [modalStyle] = React.useState(getModalStyle);
 
@@ -58,6 +59,11 @@ function App() {
           setAvatarURL(authUser.photoURL)
         }
         if(authUser.displayName){
+          db.collection('userinfo').where("username","==",authUser.displayName).onSnapshot(snapshot => {
+            setUserinfoID(snapshot.docs.map(doc => (doc.id)))
+          })
+        }
+        if(authUser.displayName){
 
         }else{
           return authUser.updateProfile({
@@ -67,6 +73,7 @@ function App() {
       }
       else{
         //logged out
+        setUserinfoID(null)
         setUser(null)
       }
 
@@ -85,6 +92,10 @@ function App() {
       })))
     })
   },[])
+
+  useEffect(() => {
+
+  },[user])
 
   const handleChange = (e) => {
     if(e.target.files[0]){
@@ -246,7 +257,7 @@ function App() {
         onClose={() => setOpenUser(false)}
       >
       <div style={modalStyle} className={classes.paper}>
-      <UserPopUp />
+      <UserPopUp userinfoID={userinfoID}/>
       </div>
       </Modal>
 
