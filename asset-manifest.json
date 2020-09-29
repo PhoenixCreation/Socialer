@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/Socialer/static/css/main.e85e3907.chunk.css",
-    "main.js": "/Socialer/static/js/main.2cfcd4c0.chunk.js",
-    "main.js.map": "/Socialer/static/js/main.2cfcd4c0.chunk.js.map",
+    "main.js": "/Socialer/static/js/main.3d58ed08.chunk.js",
+    "main.js.map": "/Socialer/static/js/main.3d58ed08.chunk.js.map",
     "runtime-main.js": "/Socialer/static/js/runtime-main.b1eb37f6.js",
     "runtime-main.js.map": "/Socialer/static/js/runtime-main.b1eb37f6.js.map",
-    "static/js/2.bd663408.chunk.js": "/Socialer/static/js/2.bd663408.chunk.js",
-    "static/js/2.bd663408.chunk.js.map": "/Socialer/static/js/2.bd663408.chunk.js.map",
+    "static/js/2.507bf875.chunk.js": "/Socialer/static/js/2.507bf875.chunk.js",
+    "static/js/2.507bf875.chunk.js.map": "/Socialer/static/js/2.507bf875.chunk.js.map",
     "index.html": "/Socialer/index.html",
-    "precache-manifest.48dcf7ca0fefa1e5b565f0537ae6329f.js": "/Socialer/precache-manifest.48dcf7ca0fefa1e5b565f0537ae6329f.js",
+    "precache-manifest.50b4bc1f0a359608d9766e461c080eb4.js": "/Socialer/precache-manifest.50b4bc1f0a359608d9766e461c080eb4.js",
     "service-worker.js": "/Socialer/service-worker.js",
     "static/css/main.e85e3907.chunk.css.map": "/Socialer/static/css/main.e85e3907.chunk.css.map",
-    "static/js/2.bd663408.chunk.js.LICENSE.txt": "/Socialer/static/js/2.bd663408.chunk.js.LICENSE.txt"
+    "static/js/2.507bf875.chunk.js.LICENSE.txt": "/Socialer/static/js/2.507bf875.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.b1eb37f6.js",
-    "static/js/2.bd663408.chunk.js",
+    "static/js/2.507bf875.chunk.js",
     "static/css/main.e85e3907.chunk.css",
-    "static/js/main.2cfcd4c0.chunk.js"
+    "static/js/main.3d58ed08.chunk.js"
   ]
 }
